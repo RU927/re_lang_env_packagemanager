@@ -3,3 +3,4 @@ platform_install.sh
 config/jupyter/migrated
 config/jupyter/serverconfig/jupyterlabapputilsextensionannouncements.json
 config/jupyter/lab/workspaces/default-37a8.jupyterlab-workspace
+config/systemd/user/default.target.wants/

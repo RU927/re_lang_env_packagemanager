@@ -3,5 +3,5 @@ Enabled: yes
 Types: deb deb-src
 URIs: https://ppa.launchpadcontent.net/flexiondotorg/nvtop/ubuntu
 Suites: jammy
-Components: nvtop
+Components: main
 Signed-By: /etc/apt/keyrings/flexiondotorg-ubuntu-nvtop.gpg
