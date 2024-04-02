@@ -1,6 +1,10 @@
-## Файлы конфигурации рабочего окружения
-
-pa-package managers en-environments la-languages re-repositories
+## Файлы конфигураций рабочего окружения
 
 Этот репозиторий - часть
-[основного скрипта установки](https://github.com/RU927/re_inst)
+[набора конфигурационных файлов](https://github.com/chikh-chikh/re_inst) для моего ПК на ОС Ubuntu.
+
+* pa - package managers 
+* en - environments 
+* la - languages 
+* re - repositories
+
