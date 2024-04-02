@@ -19,6 +19,9 @@ if (interactive()) {
   .First <- function() cat("\n   Welcome to R!\n\n")
   .Last <- function() cat("\n   Goodbye!\n\n")
 }
+# Disable completion from the language server
+options(languageserver.server_capabilities =
+          list(completionProvider = FALSE, completionItemResolve = FALSE))
 
 # languageserversetup::languageserver_install( confirmBeforeInstall = FALSE, strictLibrary = FALSE, fullReinstall = FALSE )
 # languageserversetup::languageserver_add_to_rprofile()
