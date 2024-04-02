@@ -51,7 +51,7 @@ function to_bin_apt_keys() {
 
 function to_asc_apt_keys() {
 	[ -d "$destination_dir" ] || mkdir -p "$destination_dir"
-	tmp_dir=$TMP
+	# tmp_dir=$TMP
 	for k in $keys; do
 		name="${k%.*}"
 		if [ ! -f "$destination_dir/$name.asc" ]; then
@@ -69,6 +69,12 @@ function to_asc_apt_keys() {
 		fi
 	done
 }
+
+# if [ $# -eq 1 ]; then
+# 	sources_dir="/etc/apt/keyrings"
+# 	destination_dir="../etc/apt/keyrings"
+# 	keys=$(command ls "$sources_dir")
+# fi
 
 for i in "$@"; do
 	if [[ "$i" = --* ]]; then

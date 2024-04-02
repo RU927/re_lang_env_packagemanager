@@ -1,0 +1,7 @@
+X-Repolib-Name: i2p-maintainers
+Enabled: no
+Types: deb deb-src
+URIs: https://ppa.launchpadcontent.net/i2p-maintainers/i2p/ubuntu/
+Suites: jammy
+Components: main
+Signed-By: /etc/apt/keyrings/i2p-maintainers-ubuntu-i2p.gpg

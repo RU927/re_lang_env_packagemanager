@@ -1,0 +1,7 @@
+X-Repolib-Name: i2p-community
+Enabled: yes
+Types: deb deb-src
+URIs: https://ppa.launchpadcontent.net/i2p-community/ppa/ubuntu/
+Suites: jammy
+Components: main
+Signed-By: /etc/apt/keyrings/i2p-community-ubuntu-ppa.gpg
