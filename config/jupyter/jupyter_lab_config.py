@@ -741,7 +741,8 @@ c = get_config()  #noqa
 #                        standard library module, which allows setting of the
 #                        BROWSER environment variable to override it.
 #  Default: ''
-c.ServerApp.browser = '/usr/bin/luakit %s'
+# c.ServerApp.browser = '/usr/bin/luakit %s'
+c.ServerApp.browser = 'yandex-browser-stable %s'
 
 ## The full path to an SSL/TLS certificate file.
 #  Default: ''

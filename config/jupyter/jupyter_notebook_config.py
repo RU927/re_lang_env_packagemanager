@@ -155,7 +155,8 @@
 #                        BROWSER environment variable to override it.
 #  Default: ''
 # c.NotebookApp.browser = ''
-c.NotebookApp.browser = '/usr/bin/luakit %s'
+# c.NotebookApp.browser = '/usr/bin/luakit %s'
+c.NotebookApp.browser = 'yandex-browser-stable %s'
 
 ## Полный путь к файлу сертификата с SSL/TLS.
 #  Default: ''
