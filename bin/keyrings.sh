@@ -17,12 +17,17 @@ function update_apt_keyrings() {
 	if [ -z "$keys" ]; then keys=$(command ls "$sources_dir"); fi
 	for k in $keys; do
 		name="${k%.*}"
-		recv_keys="$(gpg -k --no-default-keyring --keyring "$sources_dir/$name.gpg" |
-			grep -E "([0-9A-F]{40})" | tr -d " ")"
-		gpg --no-default-keyring \
-			--keyring "$sources_dir/$name.gpg" \
-			--keyserver hkps://keyserver.ubuntu.com \
-			--recv-keys "$recv_keys"
+		if [ -z "$recv_keys" ]; then
+			recv_keys="$(gpg -k --no-default-keyring --keyring "$sources_dir/$name.gpg" |
+				grep -E "([0-9A-F]{40})" | tr -d " ")"
+		fi
+		for r in $recv_keys; do
+			gpg --no-default-keyring \
+				--keyring "$sources_dir/$name.gpg" \
+				--keyserver hkps://keyserver.ubuntu.com \
+				--recv-keys "$r"
+		done
+		recv_keys=""
 	done
 }
 
@@ -127,7 +132,7 @@ for i in "$@"; do
 			elif [ $# -ge 2 ]; then
 				sources_dir=$2
 				keys=$3
-				# recv_keys=$4 || $recv_keys
+				recv_keys=$4 
 			fi
 			update_apt_keyrings
 			;;
