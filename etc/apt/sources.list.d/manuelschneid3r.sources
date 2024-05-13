@@ -1,0 +1,7 @@
+X-Repolib-Name: Albert launcher
+Enabled: no
+Types: deb
+URIs: https://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_22.04/
+Suites: /
+Architectures: amd64
+Signed-By: /etc/apt/keyrings/manuelschneid3r.gpg
