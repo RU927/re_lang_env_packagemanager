@@ -51,20 +51,31 @@ function to_bin_apt_keys() {
 
 function to_asc_apt_keys() {
 	[ -d "$destination_dir" ] || mkdir -p "$destination_dir"
-	# tmp_dir=$TMP
+	# tmp_dir=$TMP/keys-$(date -I)
 	for k in $keys; do
 		name="${k%.*}"
+		# echo -e "$name"
 		if [ ! -f "$destination_dir/$name.asc" ]; then
 			gpg --export --armor --no-default-keyring \
 				--keyring "$sources_dir/$name.gpg" \
 				-o "$destination_dir/$name.asc"
-			# else
-			# 	gpg --export --armor --no-default-keyring \
-			# 		--keyring "$sources_dir/$name.gpg" \
-			# 		-o "$tmp_dir/$name.asc"
-			# if ! "$tmp_dir/$name.asc" -eq "$destination_dir/$name.asc" ;
-			#   diff "$tmp_dir/$name.asc" "$destination_dir/$name.asc"
-			# fi
+		else
+			tmp_dir=$TMP/apt-keys-$(date -I)
+			mkdir -p "$tmp_dir"
+
+			gpg --export --armor --no-default-keyring \
+				--keyring "$sources_dir/$name.gpg" \
+				-o "$tmp_dir/$name.asc"
+
+			diff -q "$tmp_dir/$name.asc" "$destination_dir/$name.asc" >>/dev/null
+
+			if [ $? -eq 1 ]; then
+				# echo "differ $name"
+				mv "$destination_dir/$name.asc" "$destination_dir/$name.old.asc"
+				cp "$tmp_dir/$name.asc" "$destination_dir/"
+				# else
+				# echo "no action $name"
+			fi
 
 		fi
 	done
