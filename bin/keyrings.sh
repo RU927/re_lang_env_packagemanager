@@ -4,7 +4,7 @@
 # 	echo "Вызовите сценарий с параметрами: keyrings.sh sources_dir destination_dir "
 # fi
 
-# this_dir="$(dirname "$(realpath "$0")")"
+this_dir="$(dirname "$(realpath "$0")")"
 # destination_dir=$this_dir/test
 if [ $# -gt 1 ]; then
 	sources_dir=$2
@@ -105,7 +105,7 @@ for i in "$@"; do
 			if [ $# -eq 1 ]; then
 				keyrings_dir=etc/apt/keyrings
 				sources_dir="/$keyrings_dir"
-				destination_dir="../$keyrings_dir"
+				destination_dir="$this_dir/../$keyrings_dir"
 				keys=$(command ls "$sources_dir")
 			fi
 			to_asc_apt_keys
@@ -113,7 +113,7 @@ for i in "$@"; do
 		"--to-bin")
 			if [ $# -eq 1 ]; then
 				keyrings_dir=etc/apt/keyrings
-				sources_dir="../$keyrings_dir"
+				sources_dir="$this_dir/../$keyrings_dir"
 				destination_dir="/$keyrings_dir"
 				keys=$(command ls "$sources_dir")
 			fi
