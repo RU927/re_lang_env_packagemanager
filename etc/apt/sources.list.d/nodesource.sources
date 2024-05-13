@@ -1,7 +1,7 @@
-X-Repolib-Name: node_16
+X-Repolib-Name: Node.js
 Enabled: yes
 Types: deb deb-src
-URIs: https://deb.nodesource.com/node_16.x
+URIs: https://deb.nodesource.com/node_20.x
 Suites: jammy
 Components: main
 Signed-By: /etc/apt/keyrings/nodesource.gpg

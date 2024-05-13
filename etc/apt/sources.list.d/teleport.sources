@@ -3,6 +3,6 @@ Enabled: no
 Types: deb
 URIs: https://apt.releases.teleport.dev/ubuntu
 Suites: jammy
-Components: stable/v14
+Components: stable/v15
 Architectures: amd64
 Signed-By: /etc/apt/keyrings/teleport.gpg
