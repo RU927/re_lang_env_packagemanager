@@ -142,8 +142,8 @@ function install_lua {
 		cd "$src_dir" || return
 		curl -R -O http://www.lua.org/ftp/lua-"$lua_version".tar.gz
 		tar -zxf lua-"$lua_version".tar.gz
-		cd lua-"$lua_version" || return
-		make linux test
+		cd lua || return
+		#make linux test
 		sudo make install
 		rm -rf lua-"$lua_version".tar.gz
 	else
@@ -162,7 +162,7 @@ function install_luarocks {
 			tar -zxpf luarocks-"$luarocks_version".tar.gz
 			rm -rf luarocks-"$luarocks_version".tar.gz
 			cd luarocks-"$luarocks_version" || return
-			./configure --with-lua-include=/usr/local/include
+			./configure --with-lua-include=/usr/include/lua5.4/
 			make
 			sudo make install
 		else
