@@ -119,12 +119,10 @@ function apt_key() {
 	# source_dir="$apt_dir"
 	# dest_dir="/$apt_dir"
 
-	sudo rm -rf "/$apt_dir/keyrings"
+	# sudo rm -rf "/$apt_dir/keyrings"
   sudo mv "/$apt_dir/sources.list" "/$apt_dir/sources.list.old"
-  # sudo rm -f "/$apt_dir"/sources.list
 
-  ./bin/keyrings.sh --to-bin "$this_dir/$apt_dir"/keyrings "/$apt_dir"/keyrings 
-
+  sudo ./bin/keyrings.sh --to-bin
 	sudo ln -svnf "$this_dir/$apt_dir/sources.list.d" "/$apt_dir"
 }
 
