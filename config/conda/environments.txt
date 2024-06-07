@@ -1,1 +1,0 @@
-/home/ru/.local/share/miniconda3
