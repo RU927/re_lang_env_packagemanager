@@ -1,5 +1,5 @@
 X-Repolib-Name: CUDA
-Enabled: yes
+Enabled: no
 Types: deb
 URIs: https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/
 Suites: /

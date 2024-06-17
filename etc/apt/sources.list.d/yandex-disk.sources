@@ -1,5 +1,5 @@
 X-Repolib-Name: Yandex Disc
-Enabled: yes
+Enabled: no
 Types: deb
 URIs: https://repo.yandex.ru/yandex-disk/deb/
 Suites: stable

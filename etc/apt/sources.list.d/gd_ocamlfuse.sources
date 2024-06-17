@@ -1,5 +1,5 @@
 X-Repolib-Name: Google Drive launchpadcontent 
-Enabled: yes
+Enabled: no
 Types: deb deb-src
 URIs: https://ppa.launchpadcontent.net/alessandro-strada/ppa/ubuntu/ 
 Suites: jammy

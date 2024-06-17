@@ -1,5 +1,5 @@
 X-Repolib-Name: copyq
-Enabled: yes
+Enabled: no
 Types: deb
 URIs: https://ppa.launchpadcontent.net/hluk/copyq/ubuntu/
 Suites: jammy

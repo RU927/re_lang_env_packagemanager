@@ -1,5 +1,5 @@
 X-Repolib-Name: R c2d4u4.0+
-Enabled: yes
+Enabled: no
 Types: deb deb-src
 URIs: https://ppa.launchpadcontent.net/c2d4u.team/c2d4u4.0+/ubuntu/
 Suites: jammy

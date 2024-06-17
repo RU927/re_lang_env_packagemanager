@@ -1,5 +1,5 @@
 X-Repolib-Name: flexiondotorg (nvtop)
-Enabled: yes
+Enabled: no
 Types: deb deb-src
 URIs: https://ppa.launchpadcontent.net/flexiondotorg/nvtop/ubuntu
 Suites: jammy
