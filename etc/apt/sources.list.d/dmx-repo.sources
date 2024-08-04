@@ -1,0 +1,10 @@
+# DMX - Debian/Ubuntu Package Source
+
+X-Repolib-Name: dmx
+Enabled: yes
+Types: deb
+URIs: https://download.dmx.systems/repos/ubuntu/
+Suites: xenial/
+Signed-By: /etc/apt/keyrings/dmx.gpg
+X-Repolib-ID: dmx-repo
+
