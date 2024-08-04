@@ -1,5 +1,5 @@
 X-Repolib-Name: fruit (mpv, firefox)
-Enabled: no
+Enabled: yes
 Types: deb
 URIs: https://apt.fruit.je/ubuntu
 Suites: jammy

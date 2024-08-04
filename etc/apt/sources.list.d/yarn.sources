@@ -1,8 +1,7 @@
-X-Repolib-Name: Yarn 
+X-Repolib-Name: Yarn
 Enabled: yes
 Types: deb
 URIs: https://dl.yarnpkg.com/debian/
 Suites: stable
 Components: main
 Signed-By: /etc/apt/keyrings/yarn.gpg
-# deb https://dl.yarnpkg.com/debian/ stable main

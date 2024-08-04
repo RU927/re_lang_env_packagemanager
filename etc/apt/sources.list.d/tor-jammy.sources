@@ -3,8 +3,6 @@ Enabled: no
 Types: deb deb-src
 URIs: https://deb.torproject.org/torproject.org
 Suites: jammy
-# Suites: tor-experimental-jammy
-# Suites: tor-nightly-main-jammy
 Components: main
 Architectures: amd64
 Signed-By: /etc/apt/keyrings/tor-archive-keyring.gpg

@@ -5,4 +5,3 @@ URIs: https://repo.yandex.ru/yandex-disk/deb/
 Suites: stable
 Components: main
 Signed-By: /etc/apt/keyrings/yandex-disk.gpg
-# deb http://repo.yandex.ru/yandex-disk/deb/ stable main

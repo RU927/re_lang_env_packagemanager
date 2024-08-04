@@ -1,8 +1,7 @@
 X-Repolib-Name: Tesseract 5
-Enabled: no
+Enabled: yes
 Types: deb deb-src
-URIs: https://ppa.launchpadcontent.net/alex-p/tesseract-ocr5/ubuntu 
+URIs: https://ppa.launchpadcontent.net/alex-p/tesseract-ocr5/ubuntu
 Suites: jammy
 Components: main
 Signed-By: /etc/apt/keyrings/tesseract-ocr5.gpg
-

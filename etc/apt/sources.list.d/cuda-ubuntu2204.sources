@@ -4,7 +4,3 @@ Types: deb
 URIs: https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/
 Suites: /
 Signed-By: /etc/apt/keyrings/cuda-archive-keyring.gpg
-
-#URIs: file:///var/cuda-repo-ubuntu2204-12-3-local 
-#Signed-By: /etc/apt/keyrings/cuda-64159F24-keyring.gpg 
-

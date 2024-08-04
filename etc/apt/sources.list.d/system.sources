@@ -1,10 +1,7 @@
 Enabled: yes
 Types: deb deb-src
 URIs: https://mirror.truenetwork.ru/ubuntu
-# URIs: https://mirror.docker.ru/ubuntu/
 Suites: jammy jammy-updates jammy-security jammy-backports
 Components: main universe multiverse restricted
 Signed-By: /etc/apt/keyrings/ubuntu-keyring-2018-archive.gpg
 Architectures: amd64
-
-

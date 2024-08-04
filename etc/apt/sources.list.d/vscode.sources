@@ -1,4 +1,4 @@
-X-Repolib-Name: VScode
+X-Repolib-Name: vscode
 Enabled: no
 Types: deb
 URIs: https://packages.microsoft.com/repos/code
@@ -6,5 +6,3 @@ Suites: stable
 Components: main
 Signed-By: /etc/apt/keyrings/microsoft.gpg
 Architectures: amd64
-
-# deb [arch=amd64,arm64,armhf] http://packages.microsoft.com/repos/code stable main

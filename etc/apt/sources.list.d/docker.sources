@@ -1,5 +1,5 @@
 X-Repolib-Name: docker
-Enabled: no
+Enabled: yes
 Types: deb
 URIs: https://download.docker.com/linux/ubuntu
 Suites: jammy

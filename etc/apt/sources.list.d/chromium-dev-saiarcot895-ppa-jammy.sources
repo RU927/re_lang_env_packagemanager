@@ -5,4 +5,3 @@ URIs: https://ppa.launchpadcontent.net/saiarcot895/chromium-dev/ubuntu
 Suites: jammy
 Components: main
 Signed-By: /etc/apt/keyrings/saiarcot895-ubuntu-chromium-dev.gpg
-

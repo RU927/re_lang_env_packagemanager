@@ -1,5 +1,5 @@
 X-Repolib-Name: amnezia
-Enabled: no
+Enabled: yes
 Types: deb deb-src
 URIs: http://ppa.launchpadcontent.net/amnezia/ppa/ubuntu
 Suites: jammy

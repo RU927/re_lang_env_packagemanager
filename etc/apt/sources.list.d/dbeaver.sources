@@ -1,5 +1,5 @@
 X-Repolib-Name: DBeaver Community
-Enabled: no
+Enabled: yes
 Types: deb
 URIs: https://dbeaver.io/debs/dbeaver-ce
 Suites: /

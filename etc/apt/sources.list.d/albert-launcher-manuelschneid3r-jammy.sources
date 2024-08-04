@@ -1,5 +1,5 @@
 X-Repolib-Name: Albert launcher
-Enabled: no
+Enabled: yes
 Types: deb
 URIs: https://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_22.04/
 Suites: /

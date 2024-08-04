@@ -1,10 +1,7 @@
 X-Repolib-Name: R c2d4u4.0+
-Enabled: no
+Enabled: yes
 Types: deb deb-src
 URIs: https://ppa.launchpadcontent.net/c2d4u.team/c2d4u4.0+/ubuntu/
 Suites: jammy
 Components: main
 Signed-By: /etc/apt/keyrings/c2d4u_team-ubuntu.gpg
-
-# deb https://ppa.launchpadcontent.net/c2d4u.team/c2d4u4.0+/ubuntu/ jammy main
-# deb-src https://ppa.launchpadcontent.net/c2d4u.team/c2d4u4.0+/ubuntu/ jammy main

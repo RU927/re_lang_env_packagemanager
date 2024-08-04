@@ -1,4 +1,4 @@
-X-Repolib-Name: Saltproject.io
+X-Repolib-Name: Saltproject
 Enabled: no
 Types: deb
 URIs: https://repo.saltproject.io/salt/py3/ubuntu/22.04/amd64/latest
