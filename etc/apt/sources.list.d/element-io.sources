@@ -1,0 +1,9 @@
+X-Repolib-Name: Element
+Enabled: yes
+Types: deb
+URIs: https://packages.element.io/debian/
+Suites: default
+Components: main
+Architectures: amd64
+Signed-By: /etc/apt/keyrings/element-io.gpg
+X-Repolib-ID: element
