@@ -1,7 +1,7 @@
 X-Repolib-Name: ansible
 Enabled: yes
 Types: deb
-URIs: https://ppa.launchpad.net/ansible/ansible/ubuntu
+URIs: http://ppa.launchpad.net/ansible/ansible/ubuntu
 Suites: jammy
 Components: main
 Signed-By: /etc/apt/keyrings/ansible-archive-keyring.gpg
